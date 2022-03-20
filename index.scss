@@ -1,0 +1,9 @@
+@import '~bootstrap/scss/bootstrap';
+@import './Styles/_base';
+@import './Styles/_root';
+@import './Components/Header/Header';
+@import './Components/Footer/Footer.scss';
+@import './Components/LandingPage/LandingPage';
+@import './Components/Swap/Swap';
+@import './Styles/pagenotfound';
+@import './Components/Transactions/Transactions';

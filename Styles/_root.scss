@@ -1,0 +1,132 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+
+html,
+body {
+  // height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #000000;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-image: url('../Assets/Background.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: $font_secondary !important;
+  font-weight: 400 !important;
+  color: $primary !important;
+  background-attachment: fixed;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+// buttons
+.btn_brand {
+  transition: $transition;
+  font-size: 16px;
+  border: 0 solid $primary;
+  display: inline-block;
+  border-radius: 0px;
+  line-height: 20px;
+  padding: 15px 20px;
+  text-transform: capitalize;
+  vertical-align: middle !important;
+  color: $primary;
+  background: $brand_color;
+
+  &:hover {
+    box-shadow: $btn_box_shadow;
+  }
+
+  @include mQ($md) {
+    font-size: 14px;
+  }
+}
+// .toast_styles {
+//   font-family: $font_primary !important;
+//   font-weight: 400 !important;
+//   font-size: 14px;
+// }
+.btn_disabled {
+  cursor: not-allowed !important;
+  // padding: 5px 40px;
+  opacity: 0.7;
+  &:hover {
+    box-shadow: none !important;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $primary_dull;
+  &:hover {
+    text-decoration: underline;
+    color: $primary;
+  }
+}
+
+.select_img {
+  border-radius: 50% !important;
+  padding-right: 5px !important;
+}
+
+.modal-backdrop.show {
+  opacity: 0.8 !important;
+}
+
+.modal-content {
+  background-color: #10171f !important;
+}
+
+.exlporer_img {
+  width: 30px;
+  height: 30px;
+  margin: auto;
+}
+
+.chains {
+  @include displayCenter(center, space-between);
+  flex-wrap: wrap;
+  .chainItem {
+    margin-top: 30px;
+    img {
+      max-width: 30px;
+      max-height: 30px;
+      object-fit: fill;
+      display: block;
+    }
+  }
+}

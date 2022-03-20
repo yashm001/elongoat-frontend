@@ -1,0 +1,18 @@
+{
+  "3": {
+    "chainBalance": "/balanceOf_ETH",
+    "vaultBalance": "/ETHVaultBalance",
+    "bridgeBalance": "/getETHBridgeFees",
+    "convertValue": "/getETHAmountAfterFee",
+    "allowance": "/checkETHAllowance",
+    "postTransaction": "/getETHTransactionResponse"
+  },
+  "97": {
+    "chainBalance": "/balanceOf_BSC",
+    "vaultBalance": "/BSCVaultBalance",
+    "bridgeBalance": "/getBSCBridgeFees",
+    "convertValue": "/getBSCAmountAfterFee",
+    "allowance": "/checkBSCAllowance",
+    "postTransaction": "/getBSCTransactionResponse"
+  }
+}

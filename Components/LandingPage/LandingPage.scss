@@ -1,0 +1,40 @@
+.home {
+  margin: 100px 0;
+  &_wrapper {
+    max-width: 700px;
+    margin: auto;
+    &_header {
+      text-align: center;
+      h1 {
+        font-size: 35px;
+        line-height: 35px;
+        @include mQ($sm) {
+          font-size: 28px;
+        }
+      }
+    }
+    &_footer {
+      p {
+        color: $primary_dull;
+        font-size: 17px;
+        margin: 15px 0;
+        @include mQ($sm) {
+          font-size: 14px;
+        }
+      }
+      p,
+      h3 {
+        font-family: $font_primary;
+        font-weight: 500;
+      }
+      h3 {
+        @include mQ($sm) {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .home_wrapper_body {
+    margin-top: 200px;
+  }
+}

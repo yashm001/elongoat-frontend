@@ -1,0 +1,70 @@
+.transactions {
+  margin-top: 100px;
+  &_wrapper {
+    .filter {
+      @include displayCenter(center, space-between);
+      // flex-wrap: wrap;
+      &_left {
+        width: 100%;
+        @include displayCenter(center, space-evenly);
+        flex-wrap: wrap;
+      }
+      // &_right {
+      //   width: 100%;
+      //   @include displayCenter(flex-end, flex-end);
+      //   flex-wrap: wrap;
+      //   button {
+      //     &:first-child {
+      //       margin-right: 20px !important;
+      //     }
+      //   }
+      // }
+    }
+    .transactions_table {
+      margin: 50px 0;
+      .table {
+        color: $primary;
+        background-color: $primary;
+        thead {
+          background-color: #04aa6d;
+          tr {
+            th {
+              padding: 10px;
+              text-align: center;
+              font-weight: 700;
+              font-size: 18px;
+            }
+          }
+        }
+        tbody {
+          tr {
+            td {
+              text-align: center;
+              color: $secondary_color;
+              padding: 10px;
+              a {
+                color: $secondary_color;
+              }
+            }
+          }
+        }
+      }
+    }
+    .pagination {
+      @include displayCenter(center, space-between);
+      flex-wrap: wrap;
+      @include mQ($sm) {
+        justify-content: center;
+      }
+      margin: 20px 0;
+      button {
+        width: 30px;
+        height: 30px;
+        border: 1px solid $primary;
+        display: inline-block;
+        background: $brand_color;
+        color: $primary;
+      }
+    }
+  }
+}

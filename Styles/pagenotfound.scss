@@ -1,0 +1,25 @@
+.pageNotFound {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include mQ($sm) {
+    height: 70vh;
+  }
+  .NotFoundWrapper {
+    text-align: center;
+    h1 {
+      font-size: 150px;
+      line-height: 120px;
+      @include mQ($sm) {
+        font-size: 80px;
+      }
+    }
+    .btn_brand {
+      margin-top: 10px;
+      a:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
