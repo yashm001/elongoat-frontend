@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const client = axios.create({baseURL: 'http://localhost:4000/api/elongoat'})
+const client = axios.create({baseURL: 'http://54.175.105.175:4000/api/elongoat'})
 
 export const apiRequest = ({...options}) => {
   const onSuccess = (response) => response
