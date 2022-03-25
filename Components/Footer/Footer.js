@@ -40,7 +40,7 @@ const Footer = () => {
                     <BsTwitter />
                   </a>
                   <a
-                    href='https://www.instagram.com/elongoattoken/'
+                    href='https://www.instagram.com/elongoatoken/'
                     target='_blank'
                     rel='noopener noreferrer'
                   >
