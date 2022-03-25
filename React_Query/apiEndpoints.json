@@ -1,5 +1,5 @@
 {
-  "3": {
+  "1": {
     "chainBalance": "/balanceOf_ETH",
     "vaultBalance": "/ETHVaultBalance",
     "bridgeBalance": "/getETHBridgeFees",
@@ -7,7 +7,7 @@
     "allowance": "/checkETHAllowance",
     "postTransaction": "/getETHTransactionResponse"
   },
-  "97": {
+  "56": {
     "chainBalance": "/balanceOf_BSC",
     "vaultBalance": "/BSCVaultBalance",
     "bridgeBalance": "/getBSCBridgeFees",

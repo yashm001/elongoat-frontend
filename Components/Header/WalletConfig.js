@@ -69,7 +69,7 @@ const WalletConfig = () => {
       const route = endPoints[`${chainId}`]['chainBalance']
       const bridgeRoute = endPoints[secondChain]['vaultBalance']
       setEndpoint(route)
-      console.log("setting bridge route", bridgeRoute)
+      // console.log("setting bridge route", bridgeRoute)
       setBridgeEndpoint(bridgeRoute)
     }
   }, [chainId,secondChain/*, userAddress*/])

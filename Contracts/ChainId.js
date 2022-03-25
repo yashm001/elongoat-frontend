@@ -1,1 +1,1 @@
-export const supportedChains = [3, 97]
+export const supportedChains = [1, 56]

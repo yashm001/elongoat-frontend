@@ -3,9 +3,9 @@ import {apiRequest} from './axios_utils'
 
 // Explorer Images
 const ETH_EXP =
-  'https://ropsten.etherscan.io/images/brandassets/etherscan-logo-circle.jpg'
+  'https://etherscan.io/images/brandassets/etherscan-logo-circle.jpg'
 const BSC_EXP =
-  'https://testnet.bscscan.com/images/brandassets/bscscan-logo-circle.jpg'
+  'https://bscscan.com/images/brandassets/bscscan-logo-circle.jpg'
 // const FTM_EXP =
 //   'https://assets.coingecko.com/coins/images/4001/large/Fantom.png?1558015016'
 // const AVAX_LOGO =
@@ -184,9 +184,9 @@ export const getAllTheTransactions = (token, toChain, fromChain) => {
               : 'javascript:void(0)',
           trnx:
             item?.fromChain === 'BSC'
-              ? `https://testnet.bscscan.com/tx/${item?.fromTransactionHash}`
+              ? `https://bscscan.com/tx/${item?.fromTransactionHash}`
               : item?.fromChain === 'ETH'
-              ? `https://ropsten.etherscan.io/tx/${item?.fromTransactionHash}`
+              ? `https://etherscan.io/tx/${item?.fromTransactionHash}`
               // : item?.fromChain === 'AVAX'
               // ? `https://explorer.avax.network/tx/${item?.fromTransactionHash}`
               // : item?.fromChain === 'FTM'
@@ -210,9 +210,9 @@ export const getAllTheTransactions = (token, toChain, fromChain) => {
               : 'javascript:void(0)',
           trnx:
             item?.toChain === 'BSC'
-              ? `https://testnet.bscscan.com/tx/${item?.toTransactionHash}`
+              ? `https://bscscan.com/tx/${item?.toTransactionHash}`
               : item?.toChain === 'ETH'
-              ? `https://ropsten.etherscan.io/tx/${item?.toTransactionHash}`
+              ? `https://etherscan.io/tx/${item?.toTransactionHash}`
               // : item?.toChain === 'AVAX'
               // ? `https://explorer.avax.network/tx/${item?.toTransactionHash}`
               // : item?.toChain === 'FTM'
